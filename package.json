@@ -1,11 +1,40 @@
 {
   "name": "rock-paper-scissors-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instructions\r -------",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "node index.js",
+    "test": "SET NODE_ENV=test&& mocha --timeout 10000 --exit",
+    "start": "SET NODE_ENV=development&& nodemon index",
+    "start-prod": "SET NODE_ENV=production&& nodemon index"
   },
-  "author": "dearshrewdwit",
-  "license": "ISC"
+  "author": "claraParra",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parradominguezcm/rock-paper-scissors-challenge.git"
+  },
+  "keywords": [
+    "rock",
+    "paper",
+    "scissors"
+  ],
+  "bugs": {
+    "url": "https://github.com/Parradominguezcm/rock-paper-scissors-challenge/issues"
+  },
+  "homepage": "https://github.com/Parradominguezcm/rock-paper-scissors-challenge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0"
+  }
 }

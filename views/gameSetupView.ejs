@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h1>Let's play rock, paper, scissors!</h1>
+
+    <form action="/result" method="post">
+        <p>What's your name?</p>
+        <p>Player: <input id="player-name-textbox" type="text" name="player" required></p>
+        <p>What's your weapon choice?</p>
+        <label for="rock">
+            <input name="player_choice" id="rock" type="radio" value="rock" />
+            Rock
+        </label>
+        <label for="paper">
+            <input name="player_choice" id="paper" type="radio" value="paper">
+            Paper
+        </label>
+        <label for="scissors">
+            <input name="player_choice" id="scissors" type="radio" value="scissors" />
+            Scissors
+        </label>
+
+        <button id="names-submit" type="submit">Submit!</button>
+    </form>
+</body>
+
+</html>
