@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const ComputerPlayer = require('../src/computerPlayer.js');
 const Game = require('../src/game.js');
+const config = require('../src/config.js');
 
 router.post('/', (req, res) => {
-    const game = new Game();
+    const game = new Game(config);
 
     if (!req.body.player && req.body.player != '') {
         res.status(400).send('oops')

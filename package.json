@@ -4,10 +4,11 @@
   "description": "Instructions\r -------",
   "main": "index.js",
   "scripts": {
-    "develop": "node index.js",
+    "dev": "node index.js",
     "test": "SET NODE_ENV=test&& mocha --timeout 10000 --exit",
     "start": "SET NODE_ENV=development&& nodemon index",
-    "start-prod": "SET NODE_ENV=production&& nodemon index"
+    "start-prod": "SET NODE_ENV=production&& nodemon index",
+    "test-with-coverage": "nyc --reporter=text mocha"
   },
   "author": "claraParra",
   "license": "ISC",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "chai-http": "^4.4.0",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   }
 }
