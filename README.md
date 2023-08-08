@@ -52,7 +52,7 @@ In code review we'll be hoping to see:
 
 - [x] All tests passing
 - [x] High test coverage
-- [] The code is elegant: every class has a clear responsibility, methods are short etc.
+- [x] The code is elegant: every class has a clear responsibility, methods are short etc.
 
 ### Extended Acceptance Criteria
 

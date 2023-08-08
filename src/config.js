@@ -1,15 +1,33 @@
 const config = {
     rock: {
         'scissors': true,
-        'paper': false
+        'lizard': true,
+        'paper': false,
+        'spock': false
     },
     paper: {
         'scissors': false,
-        'rock': true
+        'lizard': false,
+        'rock': true,
+        'spock': true
     },
     scissors: {
         'paper': true,
-        'rock': false
+        'lizard': true,
+        'rock': false,
+        'spock': false
+    },
+    lizard: {
+        'paper': true,
+        'scissors': false,
+        'rock': false,
+        'spock': true
+    },
+    spock: {
+        'paper': false,
+        'lizard': false,
+        'rock': true,
+        'scissors': true
     }
 }
 module.exports = config;
